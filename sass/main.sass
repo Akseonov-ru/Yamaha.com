@@ -1,0 +1,624 @@
+// Шрифты
+@import 'fonts'
+
+// Переменные
+$redColor: #ee3b33
+$blackColor: #212327
+
+// Интерфэйс
+.button
+   width: 210px
+   height: 60px
+   border: none
+   border-radius: 4px
+   background-color: $redColor
+   color: #ffffff
+   font-size: 16px
+   margin-right: 12px
+   cursor: pointer
+   overflow: hidden
+
+   &:hover
+      box-shadow: 0 0 10px $redColor
+
+.button-o
+   color: $redColor
+   border: 3px solid $redColor
+   background-color: transparent
+
+#nav-bar-1_active
+   border-bottom: 3px solid $redColor
+
+// Стили
+*
+   box-sizing: border-box
+
+html, body
+	overflow-x: hidden
+
+body
+   font-family: "Oswald Regular"
+   font-size: 15px
+   padding: 0
+   margin: 0
+
+// header
+.nav-bar
+   display: flex
+   justify-content: space-between
+   border-bottom: 1px solid #dadfe6
+
+   &-1
+      display: flex
+   
+   a
+      text-decoration: none
+
+
+   .header-icon
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      background-color: $redColor
+      width: 100px
+      height: 100px
+      color: #fff
+      cursor: pointer
+      
+      img
+         height: 63px
+         width: 56px
+         margin-bottom: 1px
+
+      .sub-title
+         font-size: 10px
+         font-family: "Oswald Bold"
+
+   .header-list-1
+      height: 100px
+
+      ul
+         display: flex
+         font-family: 'Oswald Medium'
+         font-size: 16px
+         padding: 0
+         margin: 0
+         height: 100%
+
+         a
+            color: $blackColor
+
+         li
+            display: flex
+            justify-content: center
+            align-items: center
+            list-style: none
+            width: 157px
+            height: 100%
+            cursor: pointer
+            border-bottom: 3px solid transparent
+
+            &:hover
+               background: #ccc
+               border-bottom: 3px solid $redColor
+         
+   .nav-bar-2
+      .header-list-2
+         height: 100%
+         
+         ul
+            display: flex
+            font-family: 'Oswald Medium'
+            font-size: 12px
+            padding: 0
+            margin: 0
+            height: 100%
+
+            a
+               color: $blackColor
+
+            li
+               display: flex
+               justify-content: center
+               align-items: center
+               list-style: none
+               width: 157px
+               height: 100%
+               cursor: pointer
+
+               &:hover
+                  color: $redColor
+            
+            .header-search
+               li
+                  width: auto
+
+                  &:hover
+                     background: none
+
+// main
+.main
+   padding-bottom: 40px
+
+   .sl-nav
+      display: flex
+      justify-content: space-around
+      border-bottom: 1px solid #dadfe6
+
+      .sl-nav__img
+         padding: 23px 0
+         display: flex
+         flex-direction: column
+         justify-content: center
+         align-items: center
+         border-bottom: 3px solid transparent
+         cursor: pointer
+
+         &:hover
+            border-bottom: 3px solid $redColor
+
+         img
+            padding-bottom: 20px
+
+      .main__sub-text
+         font-family: 'Oswald Medium'
+         font-size: 13px
+
+   .sl-for
+      &__img
+         display: flex
+         justify-content: center
+         padding-top: 109px
+      
+      .main__img
+         &-bike
+            position: relative
+            z-index: 2
+            display: block
+            margin-top: -180px
+
+         &-text
+            position: relative
+            z-index: 1
+            display: block
+            margin-left: 80px
+            margin: 0 auto
+         
+         .button-add
+            display: flex
+            justify-content: center
+            align-self: center
+            border: 1px solid rgba(238, 59, 51, .2)
+            border-radius: 100%
+            height: 32px
+            width: 32px
+
+            &:hover
+               border: 1px solid rgba(238, 59, 51, 1)
+
+         .plus
+            display: flex
+            justify-content: center
+            align-self: center
+            background: $redColor
+            font-family: "Oswald Medium"
+            font-size: 21px
+            line-height: 21px
+            color: #fff
+            border-radius: 100%
+            height: 24px
+            width: 24px
+
+         .add-1, .add-2, .add-3
+            cursor: pointer
+            position: absolute
+            z-index: 6
+         
+         .add-1
+            bottom: 3px
+            left: 146px
+         
+         .add-2
+            bottom: 173px
+            left: 445px
+         
+         .add-3
+            bottom: 2px
+            left: 699px
+
+      .main-text
+         font-family: 'Oswald Medium'
+         margin-left: 10px
+
+         .title-and-date
+            display: flex
+            align-items: center
+
+         .title
+            font-size: 75px
+            color: $blackColor
+            line-height: 75px
+            margin: 0
+            margin-right: 40px
+
+            .title-dash
+               min-width: 20px
+
+         .date
+            vertical-align: middle
+            height: 20px
+            color: #81848a
+            font-size: 16px
+            
+            .year-2016
+               color: $redColor
+               font-size: 16px
+            
+            &-line
+               display: inline-block
+               margin: 0 13px
+               margin-top: -3px
+               background: #e5e7ed
+               width: 2px
+               height: 17px
+         
+         .sub-title
+            color: #81848a
+            font-size: 13px
+            margin-top: -3px
+         
+         .price
+            color: $blackColor
+            font-size: 25px
+            margin-top: 3px
+         
+         .color-combination
+            display: flex
+            align-items: center
+            margin: 24px 0
+
+            &_NO_active
+               display: flex
+               flex-direction: column
+               justify-content: center
+               align-items: center
+               border: 1px solid #cbcccf
+               border-radius: 100%
+               width: 24px
+               height: 24px
+               margin-right: 20px
+               cursor: pointer
+
+               &:hover
+                  border: 1px solid $redColor
+            
+            &_active
+               border: 1px solid $redColor
+
+            &_circle
+               display: flex
+               flex-direction: column
+               justify-content: center
+               align-items: center
+               border-radius: 100%
+               overflow: hidden
+               width: 18px
+               height: 18px
+
+            .half-1, .half-2
+               display: inline-block
+               height: 9px
+               width: 18px
+               margin: 0
+               padding: 0
+            
+            .blue
+               background: #5c68b5
+            
+            .gray
+               background: #adacaa
+            
+            .dark-gray
+               background: #545351
+            
+            .yellow
+               background: #f5cc22
+            
+            .dark
+               background: #383735
+         .decr
+            width: 440px
+            height: 129px
+            color: #212327
+            font-family: "Source Sans Pro"
+            font-size: 17px
+            font-weight: 400
+            line-height: 28px
+            margin-bottom: 34px
+
+// features
+.features
+   width: 100%
+   padding-bottom: 100px
+
+   &-nav-o
+      min-width: 100%
+      display: flex
+      justify-content: center
+
+   &-nav
+      display: flex
+      justify-content: space-between
+      width: 70%
+
+      &__items
+         display: flex
+         flex-direction: column
+         justify-content: center
+         align-items: center
+         color: $blackColor
+         cursor: pointer
+         filter: grayscale(100%)
+         opacity: .4
+
+         &:hover
+            filter: grayscale(0)
+            opacity: 1
+
+         &-circle
+            display: block
+            height: 14px
+            width: 14px
+            background-color: $redColor
+            border-radius: 100%
+
+         &__img
+            position: relative
+            height: 28px
+            width: 28px
+
+         img
+            top: 50%
+            margin-top: -13px
+            position: absolute
+            height: auto
+            width: auto
+
+         
+         .icon-life
+            img
+               top: 50%
+               margin-top: -7px
+
+         .icon-power
+            img
+               left: 50%
+               margin-left: -7.5px
+
+         .name
+            margin-top: 14px
+            margin-bottom: 16px
+
+         // Нжния линия
+         &-line
+            display: none
+         //    // position: relative
+         //    // z-index: -1
+         //    margin-top: -8px
+         //    margin-left: 144px
+         //    width: 100%
+         //    height: 1px
+         //    background-color: #c8c8c8
+         //    opacity: 0.5
+
+      #features-nav__items_active
+         color: $blackColor
+         filter: grayscale(0)
+         opacity: 1
+
+         &::after
+            background-color: $redColor
+
+   &-for
+      display: flex
+      justify-content: center
+      padding-top: 75px
+
+      &__desc
+         display: inline-block
+         width: 442px
+         font-family: "Source Sans Pro"
+         height: 64px
+         color: $blackColor
+         font-size: 15px
+         font-weight: 400
+         line-height: 25px
+         margin-left: 90px
+         margin-bottom: 55px
+
+         &-title
+            display: inline-block
+            color: $blackColor
+            font-family: 'Oswald Bold'
+            font-size: 16px
+            font-weight: 500
+            margin-bottom: 20px
+
+// gallery-foto
+.gallery-foto
+   max-width: 100%
+   height: 29.125em
+   margin-bottom: 100px
+
+   &__container
+      display: flex
+      align-items: stretch
+      justify-content: center
+      width: 100%
+      height: 100%
+      overflow: hidden
+
+      img
+         width: 100%
+         margin: 0
+         padding: 0
+
+      &__items
+         &-helf-2
+            margin-top: -2px
+
+         &_column
+            display: flex
+            flex-direction: column
+
+// Повернутьна 360 градусов
+.view360deg
+   padding-bottom: 77px
+
+   &-container
+      &__img
+         display: flex
+         justify-content: center
+         flex-direction: column
+         align-items: center
+         color: $blackColor
+         font-family: 'Oswald Medium'
+         font-size: 16px
+
+         .foto360
+            cursor: pointer
+
+         .img__text
+
+            img
+               vertical-align: middle
+               margin-right: 5px
+      &__text
+         width: 100%
+         ul
+            display: flex
+            justify-content: space-around
+            width: 70%
+            margin: 0 auto
+            margin-top: 90px
+            opacity: 0.53
+            color: $blackColor
+            font-family: 'Oswald Medium'
+            font-size: 16px
+            text-transform: uppercase
+            li
+               list-style: none
+
+// Доп. товар
+.add-item
+   padding-bottom: 95px
+
+   &-container
+      display: flex
+      justify-content: space-around
+      width: 70%
+      margin: 0 auto
+
+      &__item
+         display: flex
+         flex-direction: column
+         align-items: center
+         cursor: pointer
+
+         &__img
+            display: flex
+            justify-content: center
+            align-items: center
+            height: 200px
+            width: 200px
+         
+         .name
+            color: $blackColor
+            font-family: 'Oswald Medium'
+            font-size: 16px
+
+         .price
+            display: inline-block
+            margin-top: 3px
+            font-family: 'Oswald Medium'
+            color: #8d9095
+            font-size: 13px
+// footer
+.footer
+   .upper-footer
+      padding-top: 40px
+      padding-bottom: 34px
+      background-color: $blackColor
+
+      &__container
+         width: 80%
+         margin: 0 auto
+         display: flex
+         justify-content: space-between
+         align-self: center
+
+      .footer
+         &-text
+            display: flex
+            justify-content: space-between
+
+            ul
+               padding: 0
+               padding-right: 60px
+
+               li
+                  list-style: none
+                  color: #787e89
+                  font-family: 'Oswald Medium'
+                  font-size: 12px
+                  font-weight: 400
+                  line-height: 27px
+                  text-transform: uppercase
+                  cursor: pointer
+
+                  &:hover
+                     color: #fff
+         
+         &-logo
+            display: flex
+            justify-content: center
+            align-items: center
+            cursor: pointer
+
+   .lower-footer
+      padding: 0
+      background-color: #191a1e
+
+      &__container
+         display: flex
+         justify-content: space-between
+         margin: 0 auto
+         width: 80%
+         color: #787e89
+         font-family: 'Oswald Medium'
+         font-size: 10px
+         font-weight: 400
+         text-transform: uppercase
+
+         &-item
+            padding: 10px 0
+            display: flex
+            align-self: center
+
+            &:last-child
+               width: 40%
+
+            ul
+               width: 100%
+               display: flex
+               justify-content: space-between
+
+               li
+                  list-style: none
+                  cursor: pointer
+
+                  &:hover
+                     color: #fff
+
+
