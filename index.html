@@ -8,6 +8,8 @@
    <title>Yamaha</title>
    <!-- Снимаем все стили -->
    <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
    <!-- Шрифты -->
    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
    <!-- Мой CSS -->
@@ -53,94 +55,324 @@
    </header>
    <!-- /.header -->
    <section class="main">
-      <div class="sl-nav">
-         <div class="sl-nav__img">
-            <img src="img/sub-nav/motorcycle_1.png" alt="Мотоцикл 1">
-            <small class="main__sub-text">2016 YZF-R1M</small> 
-            <!-- /.main__sub-text -->
-         </div>
-         <!-- /.sl-nav__img -->
-         <div class="sl-nav__img"  id="nav-bar-1_active">
-            <img src="img/sub-nav/motorcycle_2.png" alt="Мотоцикл 2">
-            <small class="main__sub-text">2016 YZF-R1</small> 
-            <!-- /.main__sub-text -->
-         </div>
-         <!-- /.sl-nav__img -->
-         <div class="sl-nav__img">
-            <img src="img/sub-nav/motorcycle_3.png" alt="Мотоцикл 3">
-            <small class="main__sub-text">2016 YZF-R1S</small> 
-            <!-- /.main__sub-text -->
-         </div>
-         <!-- /.sl-nav__img -->
-         <div class="sl-nav__img">
-            <img src="img/sub-nav/motorcycle_4.png" alt="Мотоцикл 4">
-            <small class="main__sub-text">2016 YZF-R6</small> 
-            <!-- /.main__sub-text -->
-         </div>
-         <!-- /.sl-nav__img -->
-         <div class="sl-nav__img">
-            <img src="img/sub-nav/motorcycle_5.png" alt="Мотоцикл 5">
-            <small class="main__sub-text">2016 YZF-R3</small> 
-            <!-- /.main__sub-text -->
-         </div>
-         <!-- /.sl-nav__img -->
-      </div>
-      <!-- /.sl-nav -->
-      <div class="sl-for">
-         <div class="sl-for__img">
-            <div class="main__img">
-               <img class="main__img-text" src="img/main/text-power.png" alt="Надпись POWER">
-               <img class="main__img-bike" src="img/main/img-bike.png" alt="Фото товара">
-               <span class="button-add add-1">
-                  <span class="plus">+</span>
-               </span>
-               <span class="button-add add-2">
-                  <span class="plus">+</span>
-               </span>
-               <span class="button-add add-3">
-                  <span class="plus">+</span>
-               </span>
-            </div>
-            <!-- /.main__img -->
-            <div class="main-text">
-               <div class="title-and-date">
-                  <span class="title">YZF<span class="title-dash">-</span>R1</span>
-                  <span class="date"><span class="year-2016">2016</span>
-                     <span class="date-line"></span>
-                     2015</span>
-               </div> <br>
-               <div class="sub-title">STARTING AT</div>
-               <div class="price">$16,490</div>
-               <div class="color-combination">
-                  <span class="color-combination_active color-combination_NO_active">
-                     <span class="color-combination_circle">
-                        <span class="half-1 blue"></span>
-                        <span class="half-2 gray"></span>
-                     </span>
+      <ul class="nav nav-tabs">
+         <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#motorcycle-1">
+               <img src="img/sub-nav/motorcycle_1.png" alt="Мотоцикл 1">
+               <small class="main__sub-text">2016 YZF-R1M</small>
+               <!-- /.main__sub-text -->
+            </a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#motorcycle-2">
+               <img src="img/sub-nav/motorcycle_2.png" alt="Мотоцикл 1">
+               <small class="main__sub-text">2016 YZF-R1</small>
+               <!-- /.main__sub-text -->
+            </a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#motorcycle-3">
+               <img src="img/sub-nav/motorcycle_3.png" alt="Мотоцикл 1">
+               <small class="main__sub-text">2016 YZF-R1S</small>
+               <!-- /.main__sub-text -->
+            </a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#motorcycle-4">
+               <img src="img/sub-nav/motorcycle_4.png" alt="Мотоцикл 1">
+               <small class="main__sub-text">2016 YZF-R6</small>
+               <!-- /.main__sub-text -->
+            </a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#motorcycle-5">
+               <img src="img/sub-nav/motorcycle_5.png" alt="Мотоцикл 1">
+               <small class="main__sub-text">2016 YZF-R3</small>
+               <!-- /.main__sub-text -->
+            </a>
+         </li>
+   
+      </ul>
+   
+      <div class="tab-content">
+         <div class="tab-pane active" id="motorcycle-1">
+            <div class="sl-for__img">
+               <div class="main__img">
+                  <img class="main__img-text" src="img/main/text-power.png" alt="Надпись POWER">
+                  <img class="main__img-bike" src="img/main/img-bike.png" alt="Фото товара">
+                  <span class="button-add add-1">
+                     <span class="plus">+</span>
                   </span>
-                  <span class="color-combination_NO_active">
-                     <span class="color-combination_circle">
-                        <span class="half-1 dark-gray"></span>
-                        <span class="half-2 gray"></span>
-                     </span>
+                  <span class="button-add add-2">
+                     <span class="plus">+</span>
                   </span>
-                  <span class="color-combination_NO_active">
-                     <span class="color-combination_circle">
-                        <span class="half-1 yellow"></span>
-                        <span class="half-2 dark"></span>
-                     </span>
+                  <span class="button-add add-3">
+                     <span class="plus">+</span>
                   </span>
                </div>
-               <p class="decr">The YZF-R1® features a lightweight and compact crossplanecrankshaft, inline-four-cylinder, 998cc high output engine. The first ever for a production motorcycle—the motor delivers extremely high horsepower and a strong pulse of linear torque for outstanding performance.</p>
-               <button class="button">FIND A DEALER</button>
-               <button class="button button-o">DOWNLOAD SPECS</button>
+               <!-- /.main__img -->
+               <div class="main-text">
+                  <div class="title-and-date">
+                     <span class="title">YZF<span class="title-dash">-</span>R1M</span>
+                     <span class="date"><span class="year-2016">2016</span>
+                        <span class="date-line"></span>
+                        2014</span>
+                  </div> <br>
+                  <div class="sub-title">STARTING AT</div>
+                  <div class="price">$13,490</div>
+                  <div class="color-combination">
+                     <span class="color-combination_active color-combination_NO_active">
+                        <span class="color-combination_circle">
+                           <span class="half-1 blue"></span>
+                           <span class="half-2 gray"></span>
+                        </span>
+                     </span>
+                     <span class="color-combination_NO_active">
+                        <span class="color-combination_circle">
+                           <span class="half-1 dark-gray"></span>
+                           <span class="half-2 gray"></span>
+                        </span>
+                     </span>
+                     <span class="color-combination_NO_active">
+                        <span class="color-combination_circle">
+                           <span class="half-1 yellow"></span>
+                           <span class="half-2 dark"></span>
+                        </span>
+                     </span>
+                  </div>
+                  <p class="decr">The YZF-R1® features a lightweight and compact crossplanecrankshaft,
+                     inline-four-cylinder, 998cc high output engine. The first ever for a production motorcycle—the
+                     motor delivers extremely high horsepower and a strong pulse of linear torque for outstanding
+                     performance.</p>
+                  <button class="button">FIND A DEALER</button>
+                  <button class="button button-o">DOWNLOAD SPECS</button>
+               </div>
             </div>
+            <!-- /.sl-for__img -->
          </div>
-         <!-- /.sl-for__img -->
+         <div class="tab-pane" id="motorcycle-2">
+            <div class="sl-for__img">
+               <div class="main__img">
+                  <img class="main__img-text" src="img/main/text-power.png" alt="Надпись POWER">
+                  <img class="main__img-bike" src="img/main/img-bike.png" alt="Фото товара">
+                  <span class="button-add add-1">
+                     <span class="plus">+</span>
+                  </span>
+                  <span class="button-add add-2">
+                     <span class="plus">+</span>
+                  </span>
+                  <span class="button-add add-3">
+                     <span class="plus">+</span>
+                  </span>
+               </div>
+               <!-- /.main__img -->
+               <div class="main-text">
+                  <div class="title-and-date">
+                     <span class="title">YZF<span class="title-dash">-</span>R1</span>
+                     <span class="date"><span class="year-2016">2016</span>
+                        <span class="date-line"></span>
+                        2015</span>
+                  </div> <br>
+                  <div class="sub-title">STARTING AT</div>
+                  <div class="price">$16,490</div>
+                  <div class="color-combination">
+                     <span class="color-combination_active color-combination_NO_active">
+                        <span class="color-combination_circle">
+                           <span class="half-1 blue"></span>
+                           <span class="half-2 gray"></span>
+                        </span>
+                     </span>
+                     <span class="color-combination_NO_active">
+                        <span class="color-combination_circle">
+                           <span class="half-1 dark-gray"></span>
+                           <span class="half-2 gray"></span>
+                        </span>
+                     </span>
+                     <span class="color-combination_NO_active">
+                        <span class="color-combination_circle">
+                           <span class="half-1 yellow"></span>
+                           <span class="half-2 dark"></span>
+                        </span>
+                     </span>
+                  </div>
+                  <p class="decr">The YZF-R1® features a lightweight and compact crossplanecrankshaft,
+                     inline-four-cylinder, 998cc high output engine. The first ever for a production motorcycle—the
+                     motor delivers extremely high horsepower and a strong pulse of linear torque for outstanding
+                     performance.</p>
+                  <button class="button">FIND A DEALER</button>
+                  <button class="button button-o">DOWNLOAD SPECS</button>
+               </div>
+            </div>
+            <!-- /.sl-for__img -->
+         </div>
+         <div class="tab-pane" id="motorcycle-3">
+            <div class="sl-for__img">
+               <div class="main__img">
+                  <img class="main__img-text" src="img/main/text-power.png" alt="Надпись POWER">
+                  <img class="main__img-bike" src="img/main/img-bike.png" alt="Фото товара">
+                  <span class="button-add add-1">
+                     <span class="plus">+</span>
+                  </span>
+                  <span class="button-add add-2">
+                     <span class="plus">+</span>
+                  </span>
+                  <span class="button-add add-3">
+                     <span class="plus">+</span>
+                  </span>
+               </div>
+               <!-- /.main__img -->
+               <div class="main-text">
+                  <div class="title-and-date">
+                     <span class="title">YZF<span class="title-dash">-</span>R1S</span>
+                     <span class="date"><span class="year-2016">2016</span>
+                        <span class="date-line"></span>
+                        2013</span>
+                  </div> <br>
+                  <div class="sub-title">STARTING AT</div>
+                  <div class="price">$18,490</div>
+                  <div class="color-combination">
+                     <span class="color-combination_active color-combination_NO_active">
+                        <span class="color-combination_circle">
+                           <span class="half-1 blue"></span>
+                           <span class="half-2 gray"></span>
+                        </span>
+                     </span>
+                     <span class="color-combination_NO_active">
+                        <span class="color-combination_circle">
+                           <span class="half-1 dark-gray"></span>
+                           <span class="half-2 gray"></span>
+                        </span>
+                     </span>
+                     <span class="color-combination_NO_active">
+                        <span class="color-combination_circle">
+                           <span class="half-1 yellow"></span>
+                           <span class="half-2 dark"></span>
+                        </span>
+                     </span>
+                  </div>
+                  <p class="decr">The YZF-R1® features a lightweight and compact crossplanecrankshaft,
+                     inline-four-cylinder, 998cc high output engine. The first ever for a production motorcycle—the
+                     motor delivers extremely high horsepower and a strong pulse of linear torque for outstanding
+                     performance.</p>
+                  <button class="button">FIND A DEALER</button>
+                  <button class="button button-o">DOWNLOAD SPECS</button>
+               </div>
+            </div>
+            <!-- /.sl-for__img -->
+         </div>
+         <div class="tab-pane" id="motorcycle-4">
+            <div class="sl-for__img">
+               <div class="main__img">
+                  <img class="main__img-text" src="img/main/text-power.png" alt="Надпись POWER">
+                  <img class="main__img-bike" src="img/main/img-bike.png" alt="Фото товара">
+                  <span class="button-add add-1">
+                     <span class="plus">+</span>
+                  </span>
+                  <span class="button-add add-2">
+                     <span class="plus">+</span>
+                  </span>
+                  <span class="button-add add-3">
+                     <span class="plus">+</span>
+                  </span>
+               </div>
+               <!-- /.main__img -->
+               <div class="main-text">
+                  <div class="title-and-date">
+                     <span class="title">YZF<span class="title-dash">-</span>R6</span>
+                     <span class="date"><span class="year-2016">2016</span>
+                        <span class="date-line"></span>
+                        2015</span>
+                  </div> <br>
+                  <div class="sub-title">STARTING AT</div>
+                  <div class="price">$25,490</div>
+                  <div class="color-combination">
+                     <span class="color-combination_active color-combination_NO_active">
+                        <span class="color-combination_circle">
+                           <span class="half-1 blue"></span>
+                           <span class="half-2 gray"></span>
+                        </span>
+                     </span>
+                     <span class="color-combination_NO_active">
+                        <span class="color-combination_circle">
+                           <span class="half-1 dark-gray"></span>
+                           <span class="half-2 gray"></span>
+                        </span>
+                     </span>
+                     <span class="color-combination_NO_active">
+                        <span class="color-combination_circle">
+                           <span class="half-1 yellow"></span>
+                           <span class="half-2 dark"></span>
+                        </span>
+                     </span>
+                  </div>
+                  <p class="decr">The YZF-R1® features a lightweight and compact crossplanecrankshaft,
+                     inline-four-cylinder, 998cc high output engine. The first ever for a production motorcycle—the
+                     motor delivers extremely high horsepower and a strong pulse of linear torque for outstanding
+                     performance.</p>
+                  <button class="button">FIND A DEALER</button>
+                  <button class="button button-o">DOWNLOAD SPECS</button>
+               </div>
+            </div>
+            <!-- /.sl-for__img -->
+         </div>
+         <div class="tab-pane" id="motorcycle-5">
+            <div class="sl-for__img">
+               <div class="main__img">
+                  <img class="main__img-text" src="img/main/text-power.png" alt="Надпись POWER">
+                  <img class="main__img-bike" src="img/main/img-bike.png" alt="Фото товара">
+                  <span class="button-add add-1">
+                     <span class="plus">+</span>
+                  </span>
+                  <span class="button-add add-2">
+                     <span class="plus">+</span>
+                  </span>
+                  <span class="button-add add-3">
+                     <span class="plus">+</span>
+                  </span>
+               </div>
+               <!-- /.main__img -->
+               <div class="main-text">
+                  <div class="title-and-date">
+                     <span class="title">YZF<span class="title-dash">-</span>R3</span>
+                     <span class="date"><span class="year-2016">2016</span>
+                        <span class="date-line"></span>
+                        2015</span>
+                  </div> <br>
+                  <div class="sub-title">STARTING AT</div>
+                  <div class="price">$19,490</div>
+                  <div class="color-combination">
+                     <span class="color-combination_active color-combination_NO_active">
+                        <span class="color-combination_circle">
+                           <span class="half-1 blue"></span>
+                           <span class="half-2 gray"></span>
+                        </span>
+                     </span>
+                     <span class="color-combination_NO_active">
+                        <span class="color-combination_circle">
+                           <span class="half-1 dark-gray"></span>
+                           <span class="half-2 gray"></span>
+                        </span>
+                     </span>
+                     <span class="color-combination_NO_active">
+                        <span class="color-combination_circle">
+                           <span class="half-1 yellow"></span>
+                           <span class="half-2 dark"></span>
+                        </span>
+                     </span>
+                  </div>
+                  <p class="decr">The YZF-R1® features a lightweight and compact crossplanecrankshaft,
+                     inline-four-cylinder, 998cc high output engine. The first ever for a production motorcycle—the
+                     motor delivers extremely high horsepower and a strong pulse of linear torque for outstanding
+                     performance.</p>
+                  <button class="button">FIND A DEALER</button>
+                  <button class="button button-o">DOWNLOAD SPECS</button>
+               </div>
+            </div>
+            <!-- /.sl-for__img -->
+         </div>
       </div>
-      <!-- /.sl-for -->
    </section>
-   <!-- /.main -->
+
    <section class="features">
       <div class="features-nav-o">
          <div class="features-nav">
@@ -338,6 +570,21 @@
    </footer>
    <!-- /.footer -->
 
+   <script>
+      $(function () {
+      $('#myTab li:last-child a').tab('show')
+      })
+   </script>
+
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+   </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+   </script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+   </script>
    
    <!-- Мой JavaScript -->
    <script src="js/main.js"></script>
