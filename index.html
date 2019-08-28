@@ -8,8 +8,7 @@
    <title>Yamaha</title>
    <!-- Снимаем все стили -->
    <link rel="stylesheet" href="css/normalize.css">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
    <!-- Шрифты -->
    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
    <!-- Мой CSS -->
@@ -43,9 +42,9 @@
                   <a href="#"><li>FIND A DEALER</li></a>
                   <a href="#"><li>MY YAMAHA LOGIN/SIGNUP</li></a>
                   <a href="#"><li>EVENTS & DEMOS</li></a>
-                  <a class="header-search">
+                  <button class="header-search" id="header-search" type="submit">
                      <li><img src="./img/header/search.png" alt="Поиск"></li>
-                  <a/>
+                  </button>
                </ul>
             </div>
          </div>
@@ -372,79 +371,177 @@
          </div>
       </div>
    </section>
-
+   <!-- /.main --> 
    <section class="features">
-      <div class="features-nav-o">
+      <div class="features-container">
          <div class="features-nav">
-            <div class="features-nav__items">
-               <span class="features-nav__items__img">
-                  <img src="img/features/icon-list.png" alt="Список">
-               </span>
-               <span class="name">KEY FEATURES</span>
-               <!-- /.name -->
-               <span class="features-nav__items-circle"></span>
-            </div>
-            <!-- /.features-nav__items -->
-            <div class="features-nav__items" id="features-nav__items_active">
-               <span class="features-nav__items__img icon-power">
-                  <img src="img/features/icon-power.png" alt="Сила">
-               </span>
-               <span class="name">POWER</span>
-               <!-- /.name -->
-               <span class="features-nav__items-circle"></span>
-            </div>
-            <!-- /.features-nav__items -->
-            <div class="features-nav__items">
-               <span class="features-nav__items__img">
-                  <img src="img/features/icon-specs.png" alt="График">
-               </span>
-               <span class="name">SPECS</span>
-               <!-- /.name -->
-               <span class="features-nav__items-circle"></span>
-            </div>
-            <!-- /.features-nav__items -->
-            <div class="features-nav__items">
-               <span class="features-nav__items__img">
-                  <img src="img/features/icon-speed.png" alt="Скорость">
-               </span>
-               <span class="name">SPEED</span>
-               <!-- /.name -->
-               <span class="features-nav__items-circle"></span>
-            </div>
-            <!-- /.features-nav__items -->
-            <div class="features-nav__items">
-               <span class="features-nav__items__img icon-life">
-                  <img src="img/features/icon-life.png" alt="Бесконечность">
-               </span>
-               <span class="name">LIFE</span>
-               <!-- /.name -->
-               <span class="features-nav__items-circle"></span>
-            </div>
-            <!-- /.features-nav__items -->
-            <div class="features-nav__items-line"></div>
+            <ul class="nav nav-tabs">
+               <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#key-features">
+                     <span class="features-nav__img">
+                        <img src="img/features/icon-list.png" alt="Список">
+                     </span>
+                     <span class="name">KEY FEATURES</span>
+                     <!-- /.name -->
+                     <span class="features-nav__circle"></span>
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#power">
+                     <span class="features-nav__img icon-power">
+                        <img src="img/features/icon-power.png" alt="Сила">
+                     </span>
+                     <span class="name">POWER</span>
+                     <!-- /.name -->
+                     <span class="features-nav__circle"></span>
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#specs">
+                     <span class="features-nav__img">
+                        <img src="img/features/icon-specs.png" alt="График">
+                     </span>
+                     <span class="name">SPECS</span>
+                     <!-- /.name -->
+                     <span class="features-nav__circle"></span>
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#speed">
+                     <span class="features-nav__img">
+                        <img src="img/features/icon-speed.png" alt="Скорость">
+                     </span>
+                     <span class="name">SPEED</span>
+                     <!-- /.name -->
+                     <span class="features-nav__circle"></span>
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#life">
+                     <span class="features-nav__img icon-life">
+                        <img src="img/features/icon-life.png" alt="Бесконечность">
+                     </span>
+                     <span class="name">LIFE</span>
+                     <!-- /.name -->
+                     <span class="features-nav__circle"></span>
+                  </a>
+               </li>
+   
+            </ul>
          </div>
-         <!-- /.features-nav -->
+         <div class="tab-content">
+            <div class="tab-pane active" id="key-features">
+               <div class="features__tab-content">
+                  <div class="features__tab-content__img">
+                     <img src="img/features/engine.png" alt="Мотор">
+                  </div>
+                  <!-- /.features__tab-content__img -->
+                  <div class="features__tab-content__desc">
+                     <span class="features__tab-content__desc-title">Cutting-edge Crossplane Engine</span>
+                     <div style="margin-bottom: 60px;">The 998cc in-line 4-cylinder, crossplane crankshaft engine
+                        features
+                        titanium fracture-split connecting rods, which are an industry first for a
+                        production motorcycle.</div>
+                     <span class="features__tab-content__desc-title">Compact Stacked Transmission</span>
+                     <div>A 6-speed transmission has also been adopted to match the
+                        new engine. The transmission "stacks" the input/output shafts to
+                        centralize mass and to keep the overall engine size shorter front to
+                        back, which optimizes engine placement in the frame for outstanding
+                        weight balance.</div>
+                  </div>
+                  <!-- /.features__tab-content__desc -->
+               </div>
+            </div>
+            <div class="tab-pane" id="power">
+               <div class="features__tab-content">
+                  <div class="features__tab-content__img">
+                     <img src="img/features/engine.png" alt="Мотор">
+                  </div>
+                  <!-- /.features__tab-content__img -->
+                  <div class="features__tab-content__desc">
+                     <span class="features__tab-content__desc-title">Cutting-edge Crossplane Engine</span>
+                     <div style="margin-bottom: 60px;">The 998cc in-line 4-cylinder, crossplane crankshaft engine
+                        features
+                        titanium fracture-split connecting rods, which are an industry first for a
+                        production motorcycle.</div>
+                     <span class="features__tab-content__desc-title">Compact Stacked Transmission</span>
+                     <div>A 6-speed transmission has also been adopted to match the
+                        new engine. The transmission "stacks" the input/output shafts to
+                        centralize mass and to keep the overall engine size shorter front to
+                        back, which optimizes engine placement in the frame for outstanding
+                        weight balance.</div>
+                  </div>
+                  <!-- /.features__tab-content__desc -->
+               </div>
+            </div>
+            <div class="tab-pane" id="specs">
+               <div class="features__tab-content">
+                  <div class="features__tab-content__img">
+                     <img src="img/features/engine.png" alt="Мотор">
+                  </div>
+                  <!-- /.features__tab-content__img -->
+                  <div class="features__tab-content__desc">
+                     <span class="features__tab-content__desc-title">Cutting-edge Crossplane Engine</span>
+                     <div style="margin-bottom: 60px;">The 998cc in-line 4-cylinder, crossplane crankshaft engine
+                        features
+                        titanium fracture-split connecting rods, which are an industry first for a
+                        production motorcycle.</div>
+                     <span class="features__tab-content__desc-title">Compact Stacked Transmission</span>
+                     <div>A 6-speed transmission has also been adopted to match the
+                        new engine. The transmission "stacks" the input/output shafts to
+                        centralize mass and to keep the overall engine size shorter front to
+                        back, which optimizes engine placement in the frame for outstanding
+                        weight balance.</div>
+                  </div>
+                  <!-- /.features__tab-content__desc -->
+               </div>
+            </div>
+            <div class="tab-pane" id="speed">
+               <div class="features__tab-content">
+                  <div class="features__tab-content__img">
+                     <img src="img/features/engine.png" alt="Мотор">
+                  </div>
+                  <!-- /.features__tab-content__img -->
+                  <div class="features__tab-content__desc">
+                     <span class="features__tab-content__desc-title">Cutting-edge Crossplane Engine</span>
+                     <div style="margin-bottom: 60px;">The 998cc in-line 4-cylinder, crossplane crankshaft engine
+                        features
+                        titanium fracture-split connecting rods, which are an industry first for a
+                        production motorcycle.</div>
+                     <span class="features__tab-content__desc-title">Compact Stacked Transmission</span>
+                     <div>A 6-speed transmission has also been adopted to match the
+                        new engine. The transmission "stacks" the input/output shafts to
+                        centralize mass and to keep the overall engine size shorter front to
+                        back, which optimizes engine placement in the frame for outstanding
+                        weight balance.</div>
+                  </div>
+                  <!-- /.features__tab-content__desc -->
+               </div>
+            </div>
+            <div class="tab-pane" id="life">
+               <div class="features__tab-content">
+                  <div class="features__tab-content__img">
+                     <img src="img/features/engine.png" alt="Мотор">
+                  </div>
+                  <!-- /.features__tab-content__img -->
+                  <div class="features__tab-content__desc">
+                     <span class="features__tab-content__desc-title">Cutting-edge Crossplane Engine</span>
+                     <div style="margin-bottom: 60px;">The 998cc in-line 4-cylinder, crossplane crankshaft engine
+                        features
+                        titanium fracture-split connecting rods, which are an industry first for a
+                        production motorcycle.</div>
+                     <span class="features__tab-content__desc-title">Compact Stacked Transmission</span>
+                     <div>A 6-speed transmission has also been adopted to match the
+                        new engine. The transmission "stacks" the input/output shafts to
+                        centralize mass and to keep the overall engine size shorter front to
+                        back, which optimizes engine placement in the frame for outstanding
+                        weight balance.</div>
+                  </div>
+                  <!-- /.features__tab-content__desc -->
+               </div>
+            </div>
+         </div>
       </div>
-      <div class="features-for">
-         <div class="features-for__img">
-            <img src="img/features/engine.png" alt="Мотор">
-         </div>
-         <!-- /.features-for__img -->
-         <div class="features-for__desc">
-            <span class="features-for__desc-title">Cutting-edge Crossplane Engine</span>
-            <div style="margin-bottom: 60px;">The 998cc in-line 4-cylinder, crossplane crankshaft engine features
-            titanium fracture-split connecting rods, which are an industry first for a
-            production motorcycle.</div>
-            <span class="features-for__desc-title">Compact Stacked Transmission</span>
-            <div>A 6-speed transmission has also been adopted to match the
-            new engine. The transmission "stacks" the input/output shafts to
-            centralize mass and to keep the overall engine size shorter front to
-            back, which optimizes engine placement in the frame for outstanding
-            weight balance.</div>
-         </div>
-         <!-- /.features-for__desc -->
-      </div>
-      <!-- /.features-for -->
    </section>
    <!-- /.features -->
    <section class="gallery-foto">
@@ -570,22 +667,23 @@
    </footer>
    <!-- /.footer -->
 
-   <script>
-      $(function () {
-      $('#myTab li:last-child a').tab('show')
-      })
+   <div class="search">
+      <input type="text" placeholder="To search...">
+      <button class="header-search" type="submit">
+         <img src="./img/header/search.png" alt="Поиск">
+      </button>
+      <button class="header-close" type="button">
+         <img src="img/header/close.png" alt="Закрыть">
+      </button>
+      
+   </div>
+   <!-- /.search -->   
+
+   <script src="js/jquery-3.4.0.min.js">
+   </script>
+   <script src="js/bootstrap.min.js">
    </script>
 
-   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-   </script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-   </script>
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-   </script>
-   
    <!-- Мой JavaScript -->
    <script src="js/main.js"></script>
 

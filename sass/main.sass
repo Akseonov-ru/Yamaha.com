@@ -6,6 +6,11 @@ $redColor: #ee3b33
 $blackColor: #212327
 
 // Интерфэйс
+button, 
+button:active, 
+button:focus
+   outline: none
+
 .button
    width: 210px
    height: 60px
@@ -26,13 +31,15 @@ $blackColor: #212327
    border: 3px solid $redColor
    background-color: transparent
 
-#nav-bar-1_active
-   border-bottom: 3px solid $redColor
+button.header-search, button.header-close 
+   border: none
+   background: transparent
+   padding-right: 10px
 
 // Стили
 *
    box-sizing: border-box
-   transition: all .2s
+   outline: none
 
 html, body
 	overflow-x: hidden
@@ -107,7 +114,7 @@ body
    .nav-bar-2
       .header-list-2
          height: 100%
-         
+
          ul
             display: flex
             font-family: 'Oswald Medium'
@@ -192,6 +199,8 @@ body
          padding-top: 109px
          
          .main__img
+            position: relative
+
             &-bike
                position: relative
                z-index: 2
@@ -236,16 +245,16 @@ body
                z-index: 6
             
             .add-1
-               bottom: 3px
-               left: 146px
+               bottom: 225px
+               left: 71px
             
             .add-2
-               bottom: 173px
-               left: 445px
+               top: 68px
+               right: 344px
             
             .add-3
-               bottom: 2px
-               left: 699px
+               bottom: 235px
+               right: 91px
 
          .main-text
             font-family: 'Oswald Medium'
@@ -363,17 +372,54 @@ body
    width: 100%
    padding-bottom: 100px
 
-   &-nav-o
+   &-nav
       min-width: 100%
       display: flex
       justify-content: center
 
-   &-nav
+      &__img
+         position: relative
+         height: 28px
+         width: 28px
+         
+   .nav-tabs .nav-link:hover
+      border-color: transparent
+
+   .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active
+      border-color: transparent
+
+   .nav-tabs
       display: flex
       justify-content: space-between
       width: 70%
 
-      &__items
+   ul
+      position: relative
+      border-bottom: 1px solid rgba(200, 200, 200, .5)
+
+      li
+         position: relative
+         text-align: center
+         height: 95px
+
+         &::after
+            content: ''
+            display: block
+            height: 14px
+            width: 14px
+            position: absolute
+            left: 50%
+            bottom: 0
+            transform: translate(-50%, 50%)
+            background-color: #c8c8c8
+            border-radius: 100%
+            cursor: pointer
+         
+         &:hover
+            &::after
+               background-color: $redColor
+
+      .nav-link
          display: flex
          flex-direction: column
          justify-content: center
@@ -386,62 +432,20 @@ body
          &:hover
             filter: grayscale(0)
             opacity: 1
-
-         &-circle
-            display: block
-            height: 14px
-            width: 14px
-            background-color: $redColor
-            border-radius: 100%
-
-         &__img
-            position: relative
-            height: 28px
-            width: 28px
-
-         img
-            top: 50%
-            margin-top: -13px
-            position: absolute
-            height: auto
-            width: auto
-
          
-         .icon-life
-            img
-               top: 50%
-               margin-top: -7px
-
-         .icon-power
-            img
-               left: 50%
-               margin-left: -7.5px
-
-         .name
-            margin-top: 14px
-            margin-bottom: 16px
-
-         // Нжния линия
-         &-line
-            display: none
-         //    // position: relative
-         //    // z-index: -1
-         //    margin-top: -8px
-         //    margin-left: 144px
-         //    width: 100%
-         //    height: 1px
-         //    background-color: #c8c8c8
-         //    opacity: 0.5
-
-      #features-nav__items_active
+      .nav-link.active
          color: $blackColor
          filter: grayscale(0)
          opacity: 1
 
-         &::after
+         li::after
             background-color: $redColor
 
-   &-for
+   .name
+      margin: 10px
+      margin-bottom: -10px
+
+   .features__tab-content
       display: flex
       justify-content: center
       padding-top: 75px
@@ -641,5 +645,40 @@ body
 
                   &:hover
                      color: #fff
+
+// Search
+.search
+   display: flex
+   justify-content: center
+   position: fixed
+   top: 0
+   left: 0
+   width: 100%
+   height: 100%
+   z-index: 10
+   background-color: rgba(255, 255, 255, .9)
+   padding-top: 10% 
+   font-size: 20px
+   display: none
+
+   input
+      border: none
+      background: transparent
+      height: 50px
+      width: 50%
+      border-bottom: 3px solid $redColor
+      padding-left: 20px
+   
+   button
+      position: relative
+      left: -80px
+      height: 16px
+      width: 16px
+      padding: 0
+      margin: 10px
+
+      img
+         height: 100%
+         width: 100%
 
 
